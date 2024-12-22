@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .all_login {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .all_login form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .all_login label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            align-self: flex-start;
+        }
+
+        .all_login input[type="text"],
+        .all_login input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .all_login button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .all_login button:hover {
+            background-color: #218838;
+        }
+
+        .all_login p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .all_login a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 14px;
+        }
+
+        .all_login a:hover {
+            text-decoration: underline;
+        }
+
+        .all_login .actions {
+            margin-top: 20px;
+        }
+
+        .all_login .actions a {
+            color: #007bff;
+            font-size: 14px;
+        }
+
+        .all_login .actions a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="all_login">
+        <h2>User Login</h2>
+         <form action="userlogin.jsp" method="post">
+            <label for="username">Enter Your Username</label>
+            <input type="text" name="username" id="username" placeholder="Username" required>
+            <br><br>
+            <label for="password">Enter Your Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <br><br>
+            <button type="submit">Login</button>
+         </form>
+         <p>Don't have an account?</p>
+         <p><a href="usersignup.html">Sign Up as User</a></p>
+
+    </div>
+
+    <div class="actions">
+        <a href="index.html">Return to Home Page</a>
+    </div>
+
+</body>
+</html>

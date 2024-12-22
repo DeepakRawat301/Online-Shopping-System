@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Portal</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .all_signup {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .all_signup form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .all_signup label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            align-self: flex-start;
+        }
+
+        .all_signup input[type="text"],
+        .all_signup input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .all_signup button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .all_signup button:hover {
+            background-color: #0056b3;
+        }
+
+        .all_signup p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .all_signup a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 14px;
+        }
+
+        .all_signup a:hover {
+            text-decoration: underline;
+        }
+
+        .all_signup .actions {
+            margin-top: 20px;
+        }
+
+        .all_signup .actions a {
+            color: #007bff;
+            font-size: 14px;
+        }
+
+        .all_signup .actions a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="all_signup">
+        <h2>Admin Sign Up</h2>
+        <form action="adminsignup.jsp" method="post">
+            <label>Enter Your Username</label>
+            <input type="text" name="username" placeholder="Username" required>
+            <br><br>
+            <label>Enter Your Password</label>
+            <input type="password" name="password" placeholder="Password" required>
+            <br><br>
+            <label>Enter Your Name</label>
+            <input type="text" name="name" placeholder="Name" required>
+            <br><br>
+            <label>Enter Your Email</label>
+            <input type="email" name="email" placeholder="Email" required>
+            <br><br>
+            <label>Enter Your City</label>
+            <input type="text" name="city" placeholder="City" required>
+            <br><br>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <p><a href="first.html">Return to home page</a></p>
+    </div>
+
+    <div class="return-link">
+        <a href="index.html">Return to Home Page</a>
+    </div>
+    
+</body>
+</html>
